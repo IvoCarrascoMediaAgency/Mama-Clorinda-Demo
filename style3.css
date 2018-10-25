@@ -38,7 +38,7 @@ p{
 	display: grid;
     width: 100%;
     top: 0;
-    
+    z-index: 28;
     position: fixed;
 }
 
@@ -68,7 +68,7 @@ p{
     border-radius: 50%;
 
 	background: #fadc1a;
-	top: 45px;
+	top: 40px;
     /* box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF; */
     cursor: pointer;
     height: 50px;
@@ -215,6 +215,7 @@ p{
 
 .mostrarmenu2{
 	right: 0;
+	z-index: 29;
 
 	
 }
@@ -353,6 +354,7 @@ p{
 
 .container2{
 	display: flex;
+	background:  rgba(126, 5, 5, .8);
 }
 
 
