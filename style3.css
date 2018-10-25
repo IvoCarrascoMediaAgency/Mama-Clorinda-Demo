@@ -2065,9 +2065,27 @@ figure a{
 
 }
 
-.iconosocial,.icon-facebook,.icon-instragram,.icon-whatsapp{
+.iconosocial,.icon-facebook,.icon-whatsapp,.icon-instragram{
 	margin: 5px;
+	font-size: 32px;
 
+}
+
+.iconosocial .icon-facebook{
+	color: #3b5998;
+	background: white;
+    border-radius: 6px;
+}
+
+.iconosocial .icon-whatsapp{
+	color:white;
+	background: #25D366;
+	border-radius: 50%;
+}
+
+.iconosocial .icon-instagram{
+	background: white;
+	border-radius: 11px;
 }
 
 
