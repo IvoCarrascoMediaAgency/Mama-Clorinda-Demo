@@ -34,28 +34,13 @@ p{
 	font-family: 'Open Sans', sans-serif;
 }
 
-.main{
-	
-	width:90%;
-
-	margin:0 auto;
-	
-	
-}
 
 
 
 
 /*CABECERA  */
 
-header{
-	/* display: none; */
-	display:grid;
-	position: relative;
-	
-	height: 55px;
 
-}
 
 
 
@@ -73,7 +58,7 @@ header{
 
 /* Menu hamburger */
 .menu {
-	display: none;
+	
     border-radius: 50%;
 
 	background: #fadc1a;
@@ -89,7 +74,7 @@ header{
 	filter:opacity(90%);
 	
 
-	/* display: grid; */
+	display: grid;
 	grid-template-columns: auto;
 	align-items: center;
 }
@@ -158,8 +143,7 @@ header{
 	position: relative;
 
 	font-size: 1em;
-	background:  rgb(242, 238, 246, .9);
-	float: right;
+    background: rgba(126, 5, 5, .8);	float: right;
 	
 }
 
@@ -230,7 +214,7 @@ header{
 }
 
 .logofinalm{
-	margin: 0 auto;
+	margin:30px auto 0 auto;
 	display: grid;
 	align-items: center;
 
@@ -238,9 +222,11 @@ header{
 }
 .logofinalm a{
 	text-decoration: none;
-	font-style: italic;
-	color: #ff6600;
-	font-weight: bold;
+    font-style: italic;
+    color: #fadc1a;
+    font-weight: bold;
+	font-family: Pacifico;
+	font-size: 1.5em;
 
 
 }
@@ -248,8 +234,8 @@ header{
 
 .logofinalm img{
 
-	height: 120px;
-	margin-bottom:1em;
+	height: 80px;
+    margin-bottom: 1em;
 	
 }
 
@@ -473,7 +459,7 @@ input:checked ~ ul {
 
 .hul li{
 	margin-bottom: 1em;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #fadc1a;
 }
 
 .hul li a {
@@ -2071,11 +2057,16 @@ figure a{
 
 /* fin x2precios */
 
-.icon-telefono,.icon-confi,.icon-planes,.icon-clientes,.icon-commnunal-administrator:before{
+.links,.icon-telefono,.icon-menudeldia,.icon-mail,.icon-gestion:before{
 	
 	
-	color: #e2c285;
+	color: #fadc1a;
 	margin-right: 5px;
+
+}
+
+.iconosocial,.icon-facebook,.icon-instragram,.icon-whatsapp{
+	margin: 5px;
 
 }
 
@@ -2083,7 +2074,7 @@ figure a{
 
 .menumovil2 .hul li a{
 	display: block;
-	color:#333;
+	color:white;
 
 }
 
@@ -2091,12 +2082,12 @@ figure a{
 	transform: scale(1.1);
 	transition: 450ms all;
 	transform-origin: center center;
-	color: #4d148c;
+	color: #fadc1a;
 	
 }
 
 .links{
-	width: 70%;
+	
 	display: grid;
 	margin: 0 auto;
 	align-items: center;
