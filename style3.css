@@ -746,7 +746,7 @@ body{
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
-	padding: 0.5em 0.5em;
+	padding: 0.5em 1.5em;
 
 }
 .btnprueba1 a span{
@@ -808,7 +808,34 @@ body{
 /* Menu Movil */
 
 
-
+.portada1{
+	
+	position: absolute;
+	background: #fff fixed no-repeat 50% 50%;
+	background-size: cover;
+	
+	position: absolute;
+		width: 100%;
+	
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -2;
+	
+	
+	
+	}
+	
+	
+	#portada1{
+		
+	
+	
+		background-image: url("img/mamaclorindanigth.jpg");
+	
+	
+	
+	}
 
 
 .logomenu{
@@ -1594,7 +1621,7 @@ nav li{
 	
 }
 
-.portada1{
+/* .portada1{
 	
 
 	position: absolute;
@@ -1606,7 +1633,7 @@ nav li{
 	z-index: -2;
 
 
-}
+} */
 
 
 
@@ -2368,19 +2395,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	
 }
 
-.portada1{
-	
 
-	position: absolute;
-	width: 100%;
-	background-image: url("img/mamaclorindanigth.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	z-index: -2;
-
-
-}
 
 .h2textportada{
 	display: none;
