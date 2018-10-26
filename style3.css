@@ -572,8 +572,8 @@ body{
 	color:white;
 	bottom: 0;
 	width: 100%;
-	margin-top: -10px;
-font-size: 2em;
+
+	font-size: 2em;
 	overflow: hidden;
 	text-shadow: #7e0505 1px 1px;
 	animation: hemh2a ease-in-out 1s;
@@ -1180,7 +1180,7 @@ font-size: 1.2em;
 	height: 100%;
 	/* background: linear-gradient(to bottom, rgba(255,255,255,.4) 30%, rgba(126,5,5,.5) 100%); */
 	
-	animation: animate 20s linear infinite alternate-reverse;
+	animation: animate 20s linear infinite alternate;
 	
 	
 }
@@ -1620,8 +1620,7 @@ nav li{
 
 
 .layer{
-	
-background: linear-gradient(to bottom, rgba(255,255,255,.3) 0%, rgba(0,0,0,0.34) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,.4) 50%, rgba(0,0,0,1) 100%);
 	z-index: -1;
 	width: 100%;
 	height: 100vh;
@@ -2421,7 +2420,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
-
+.containers{
+	top: 0;
+}
 
 
 
@@ -2534,6 +2535,7 @@ height: 55px;
 
 	.menutop li{
 		display: block;
+		margin-left: 5px;
 	}
 	.menutop li:hover{
 		display: block;
