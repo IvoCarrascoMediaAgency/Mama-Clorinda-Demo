@@ -582,10 +582,14 @@ p{
     z-index: 9999;
 }
 
+.btnprueba1:hover{
+	border: 2px solid #fadc1a;
+}
+
 .btnprueba1 a:hover{
 	color:#fadc1a;
 	background: #7e0505;
-	border: 2px solid #fadc1a;
+	
 	
 	
 }
@@ -1344,10 +1348,10 @@ nav li{
 .history2 .btnprueba1{
 	position: absolute;
     display: grid;
-    top: 50%;
+    top: 70%;
     right: 0;
     left: 0;
-    width: 50%;
+    width: 200px;
 	margin: 0 auto;
 	z-index: 10;
 }
@@ -1371,6 +1375,247 @@ nav li{
 	margin-left: 5px;
 	font-size: 0.8em;
 	line-height: 50px;
+}
+
+.menumama{
+	display: grid;
+	width: 100%;
+	margin: 0 auto;
+	grid-template-rows: 30%;
+	text-align: center;
+	height: 100vh;
+}
+
+.menumama2{
+	display: grid;
+
+	margin: 0 auto;
+
+	text-align: center;
+	height: 50vh;
+}
+
+.menu2{
+	display: grid;
+	grid-template-areas: 'carnes mariscos' 'carnes mariscos';
+							;
+
+}
+
+.carnes{
+	grid-area: carnes;
+}
+
+.mariscos{
+	grid-area: mariscos;
+}
+
+
+.textmenu{
+	width: 90%;
+	margin: 0 auto;
+}
+.textmenu h2{
+	color: #7e0505;
+}
+
+.textmenu h2{
+	display: grid;
+	height: 30%;
+	justify-content: center;
+  	align-items: center;
+}
+
+.textmenu p{
+	display: grid;
+	height: 30%;
+	justify-content: center;
+  	align-items: center;
+}
+
+.galeriaul{
+	display: grid;
+	
+}
+
+.galeriaul img{
+	width: 100%;
+	height: 100%;
+}
+
+.menu1{
+	
+	display: grid;
+	grid-template-areas: 'entrada entrada entrada entrada'
+							'sopas sopas comida comida';
+}
+
+.entradas{
+	grid-area: entrada;
+
+}
+
+.galeriaentradas{
+	width: 100%;
+	height: 20vh;
+
+}
+
+.galeriaentradas ul{
+	width: 100%;
+	height: 100%;
+}
+
+.galeriaentradas ul li a img{
+	width: 100%;
+	height: 100%;
+}
+
+.galeriaentradas ul li a{
+	width: 100%;
+	
+}
+
+.galeriaentradas ul li{
+	width: 100%;
+	list-style: none;
+	
+}
+
+.galeriaentradas a.agale{
+
+	color: #7e0505;
+    position: absolute;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 30px;
+    width: 140px;
+    margin-top: 20%;
+    background: #fadc1a;
+    line-height: 25px;
+    background: linear-gradient(to bottom, #fcea75 0%,#fadc1a 100%);
+    border: 1px solid #7e0505;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #7e0505;
+    display: inline-block;
+    text-decoration: none;
+	cursor: pointer;
+	font-family: Pacifico;
+	font-weight: bold;
+	
+}
+
+.galeriaentradas a.agale:hover{
+	color: #fadc1a;
+	background: linear-gradient(to bottom, #be8282 0%,#7e0505 100%);
+	border: 1px solid #fadc1a;
+}
+
+
+.modal{
+	display: none;
+}
+
+.modal:target {
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+.modal p{
+	color: white;
+	font-style: italic;
+	font-size: 0.9em;
+	width: 90%;
+	margin: auto;
+}
+
+.modal h3{
+	color: #fadc1a;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.imagen{
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a{
+	color: white;
+	font-size: 2em;
+	text-decoration: none;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.imagen a:nth-child(2){
+	margin: 0;
+	height: 1005;
+	flex-shrink: 2;
+}
+
+.imagen img{
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	
+}
+
+.cerrar{
+	margin-top: 20px;
+	position: absolute;
+    top: 0;
+    right: 20px;
+	
+}
+
+.cerrar a{
+	color:#fadc1a;
+	text-decoration: none;
+	border-radius: 50%;
+	background: #7e0505;
+
+	width: 30px;
+	height: 30px;
+	line-height: 33px;
+	margin: auto;
+	font-size: 0.7em;
+	
+	display: block;
+}
+
+.imghide{
+	visibility: hidden;
+}
+
+.sopas{
+	grid-area: sopas;
+}
+
+.comidatipica{
+	grid-area: comida;
+}
+
+.face{
+	height: 50vh
+}
+.mapa{
+	height: 50vh;
 }
 
 
