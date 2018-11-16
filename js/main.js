@@ -45,6 +45,11 @@ $('.mostrarmenu2').on('click', function(){
 })
 
 
+function moverseA(reservar) {
+  location.hash = "#" + reservar;
+}
+
+
 // $('.menu').scroll(function(){
 //   $(this).scrollTop().addClass('colormenu3');
 // })

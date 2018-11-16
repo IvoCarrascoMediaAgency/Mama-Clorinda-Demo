@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5{
 	
 	
 	font-family: 'Pacifico', sans-serif;
+	color: #7e0505;
 	
 }
 
@@ -484,7 +485,7 @@ p{
 
 .containercontact{
 	height: 35px;
-	background: #fadc1a;
+	background: #fcea75;
 	overflow: hidden;
 }
 
@@ -504,23 +505,25 @@ p{
 .containercontactul{
 	display: grid;
 	grid-template-columns: auto;
+	justify-content: center;
 	
 	
-	text-align: center;
 
 }
 
 .containercontactul li{
 	list-style-type: none;
-	display: grid;
+	display: flex;
 
 }
 
 
 
+
+
 .ite {
 	text-decoration: none;
-	color: #7e0505;
+	color: #be8282;
 	font-size: 0.9em;
 }
 
@@ -583,7 +586,7 @@ p{
 }
 
 .btnprueba1:hover{
-	border: 2px solid #fadc1a;
+	border: 1px solid #fadc1a;
 }
 
 .btnprueba1 a:hover{
@@ -602,6 +605,7 @@ p{
     text-decoration: none;
     display: inline-block;
 	padding: 0.5em 1.5em;
+	transition: 0.5s;
 
 }
 .btnprueba1 a span{
@@ -708,6 +712,7 @@ p{
 	cursor: pointer;
 	font-family: Pacifico;
 	font-style: italic;
+	transition: 0.5s;
 	
 }
 
@@ -1261,13 +1266,13 @@ nav li{
 	
 	margin: 0;
 	align-items: center;
-	height: 100vh;
+	height: 100%;
 
 }
 
 
 
-.links,.icon-telefono,.icon-menudeldia,.icon-mail,.icon-gestion:before{
+.links,.icon-clientes,.icon-telefono,.icon-menudeldia,.icon-mail,.icon-gestion:before{
 	
 	
 	color: #fadc1a;
@@ -1325,11 +1330,11 @@ nav li{
  margin: 0 auto;
  grid-template-columns: auto;
  text-align: center;
- height: 100vh;
+ height: 600px;
 }
 
 .history1{
-	height: 50vh;
+	height: 300px;
 	display: grid;
 }
 
@@ -1339,7 +1344,7 @@ nav li{
 }
 
 .history2{
-	height: 50vh;
+	height: 300px;
 	position: relative;
 	background: rgba(0,0,0,.5);
 	
@@ -1383,8 +1388,52 @@ nav li{
 	margin: 0 auto;
 	grid-template-rows: 30%;
 	text-align: center;
-	height: 100vh;
+	height: 600px;
 }
+
+.menumama a span.flechatipica{
+	position: absolute;
+	
+    width: 100%;
+
+	font-size: 3em;
+	overflow: hidden;
+	display: block;
+	
+}
+
+ .icon-flecha-down:before{
+	animation: example 1s linear 1s infinite alternate;
+    position: relative;
+}
+
+@keyframes example {
+	from {top:0; color: #fadc1a}
+    to {top:10px; color: #7e0505;}
+}
+
+
+
+
+
+/* .icon-flecha-down:before{
+	animation: subi ease-in-out 1s;
+}
+
+@keyframes subi {
+	from{
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 0.5;
+	} */
+
+
+
+
+
 
 .menumama2{
 	display: grid;
@@ -1392,24 +1441,28 @@ nav li{
 	margin: 0 auto;
 
 	text-align: center;
-	height: 50vh;
+	margin-bottom: 60px;
 }
 
 .menu2{
 	display: grid;
 	grid-template-areas: 'carnes mariscos' 'carnes mariscos';
 							;
-
+	
 }
 
 .carnes{
 	grid-area: carnes;
+	margin: 20px auto 50px auto;
 }
 
 .mariscos{
 	grid-area: mariscos;
+	margin: 20px auto 50px auto;
 }
-
+input{
+	overflow: hidden;
+}
 
 .textmenu{
 	width: 90%;
@@ -1461,6 +1514,17 @@ nav li{
 
 }
 
+
+
+.galeriaentradas ul li a img{
+	max-width: 240px;
+	min-width: 160px;
+}
+
+.galeriaentradas ul li a img.fototipica{
+	max-width: 450px;
+}
+
 .galeriaentradas ul{
 	width: 100%;
 	height: 100%;
@@ -1495,12 +1559,38 @@ nav li{
     width: 140px;
     margin-top: 20%;
     background: #fadc1a;
-    line-height: 25px;
+    line-height: 30px;
     background: linear-gradient(to bottom, #fcea75 0%,#fadc1a 100%);
     border: 1px solid #7e0505;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    color: #7e0505;
+    display: inline-block;
+    text-decoration: none;
+	cursor: pointer;
+	font-family: Pacifico;
+	font-weight: bold;
+	
+}
+
+.galeriaentradas a.agale2{
+
+	color: #7e0505;
+    
+    display: grid;
+    /* margin-left: auto;
+    margin-right: auto; */
+    height: 25px;
+    width: 100px;
+    /* margin-top: 20%; */
+    background: #fadc1a;
+    line-height: 25px;
+    background: linear-gradient(to bottom, #fcea75 0%,#fadc1a 100%);
+    border: 1px solid #7e0505;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     color: #7e0505;
     display: inline-block;
     text-decoration: none;
@@ -1516,9 +1606,18 @@ nav li{
 	border: 1px solid #fadc1a;
 }
 
+.galeriaentradas a.agale2:hover{
+	color: #fadc1a;
+	background: linear-gradient(to bottom, #be8282 0%,#7e0505 100%);
+	border: 1px solid #fadc1a;
+}
 
 .modal{
 	display: none;
+}
+
+.modalesp{
+	margin-bottom: 20px;
 }
 
 .modal:target {
@@ -1545,6 +1644,21 @@ nav li{
 	font-size: 1.5em;
 	text-align: center;
 	margin: 15px 0;
+}
+.ulmodaltext{
+	text-align: left;
+}
+.ulmodaltext li{
+	list-style: none;
+}
+.ulmodaltext li h4{
+	font-size: .5em;
+	margin-bottom: 10px;
+	color: #fadc1a;
+	margin-top: 10px;
+}
+.ulmodaltext li p{
+	font-size: .4em;
 }
 
 .imagen{
@@ -1584,6 +1698,9 @@ nav li{
 	
 }
 
+
+
+
 .cerrar a{
 	color:#fadc1a;
 	text-decoration: none;
@@ -1618,6 +1735,34 @@ nav li{
 	height: 50vh;
 }
 
+.contacto{
+	width: 90%;
+	height: 600px;
+	margin: 0 auto;
+	display: grid;
+	align-content: center;
+}
+
+.contactoul{
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.contacto ul li{
+	list-style: none;
+}
+
+.contactoul a{
+	text-decoration: none;
+}
+
+.contacto h2{
+	width: 90%;
+	margin:0 auto 20px auto;
+	text-align: center;
+
+}
+
 
 .mapacontacto{
 	width: 100%;
@@ -1626,13 +1771,207 @@ nav li{
 }
 
 
+.mapa iframe{
+	display: grid;
+	margin: 0 auto;
+}
+
+.reservas{
+	background: url(img/reservas.png);
+	
+    display: block;
+    align-items: center;
+    background-repeat: no-repeat;
+    width: 100%;
+	background-size: cover;
+
+	height: 650px;
+	
+}
+
+
+
+.reservaslayer h2{
+	text-align: center;
+    color: #fadc1a;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: -30px;
+    font-size: 2em;
+    text-shadow: 1px 2px #444;
+}
+
+.reservastext{
+	margin: 20px auto;
+}
+
+form{
+	width: 90%;
+	margin: 0 auto;
+	/* display: grid; */
+	/* justify-items: center; */
+	margin-top: 250px;
+	max-width: 400px;
+	overflow:hidden;
+	height: 100%;
+
+}
+
+input, textarea {
+	width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 1em;
+    
+    border-radius: 3px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+}
+
+input::placeholder{
+	color:rgba(255,255,255,0.7);
+}
+
+textarea::placeholder{
+	color:rgba(255,255,255,0.7);
+}
+
+textarea {
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+
+}
+
+.foodies{
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	align-content: center;
+	height: 70vh;
+}
+
+.foodh2 h2{
+	text-align: center;
+	width: 90%;
+	margin: 0 auto  20px auto;
+
+
+}
+
+.fotofoodie{
+	display: block;
+	color: #fadc1a;
+	text-align: right;
+	background: rgba(0,0,0,.5);
+}
+
+.fotofoodie a{
+	text-decoration: none;
+	color: white;
+	font-style: italic;
+	margin-right: 10px;
+
+}
+
+.fotofoodie2{
+	display: block;
+	color: white;
+	text-align: right;
+	
+}
+
+.m2:target{
+	display: block;
+	margin: 0 auto;
+
+}
+
+.m2{
+	display: none;
+
+}
+
+
+.m2 h3{
+	margin: 40px auto 0 auto;
+}
+
+.m2 p.pm2{
+	text-align: center;
+	margin: 20px auto;
+}
+
+.m3 a img{
+	width: 250px;
+}
+
+.m4 {
+	display: grid;
+	align-items: center;
+	margin: 20px auto;
+}
+
+.m5{
+	margin: 0 auto;
+}
+
+
+.mc1 a{
+	color: #fadc1a;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #7e0505;
+    width: 30px;
+    height: 30px;
+    line-height: 33px;
+    margin: auto;
+    font-size: 0.7em;
+	align-items: center;
+	display: grid;
+	
+}
+
+
+.trip{
+	height: 50vh;
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+.face{
+	height: 50vh;
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+.face iframe{
+	margin: 0 auto;
+}
+
 footer{
 	width: 100%;
 	height: 300px;
 	background: #4d148c;
 }
 
+#boton{
+	background: #fadc1a;
+	color: #7e0505;
+	border: 1px solid #7e0505;
+	width: 100px;
+	font-weight: bold;
 
+}
+
+#boton:hover{
+	cursor:pointer;
+	background: #7e0505;
+	color: #fadc1a;
+	border: 1px solid #fadc1a;
+}
 
 
 
